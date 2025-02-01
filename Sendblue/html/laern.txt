@@ -1,0 +1,13 @@
+short_name name off apk ||| "short_name" : "name apk"
+name whene open the app ||| "name" : "pup"
+description of this app ||| "description" : "bla bla bla .."
+the first page when open the app ||| "start_url" : "/" "/indx.html"
+display  ||| standalone
+orientation ||| any
+scope ||| the file may be work \ slash / for all file
+icons |||  "icons" [{ "src" : "url.png" , "size" : "96x96" ,"type" : "image/png"},{}...]
+
+
+
+for link 
+<link rel="manifest" href="url.json">

@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: orange;
+    color: red;
+    animation-name: opa;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+header{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 10px;
+    text-shadow: 0 0 20px orange;
+    /* box-shadow: 0px 30px 20px -10px #fff inset; */
+}
+nav , h1{
+
+    padding-bottom: 20px;
+    border-bottom: 5px solid red;
+}
+@keyframes opa {
+    0%{opacity: 0; transform: translateY(40px); filter: blur(10px);}
+    100%{opacity: 1; transform: translateY(0px);}
+}
+nav ul li a{
+    background: orange ;
+    transition: all .4s !important;
+    color: red !important;
+}
+nav{
+    box-shadow: 0px -30px 20px -10px red inset;
+}
+nav ul li a:hover{
+    font-weight: 900 !important;
+    text-decoration: underline 1px red;
+    transform: scale(1.2);
+}
+article div{
+    padding: 10px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    border: 6px solid red;
+    border-radius: 7px;
+    object-fit: cover;
+}
+div p{
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.02em;
+    cursor: pointer;
+}
+textarea , input{
+    width: 100%;
+    border:  3px solid red !important;
+    padding: 5px 10px;
+    background: orange !important;
+    box-shadow: 50px -10px 10px red inset;
+    color: white !important;
+    font-weight: 900;
+    outline: navajowhite;
+}
+::placeholder{
+    color: white !important;
+    font-weight: 600;
+    
+}
+form{
+    text-align: center;
+}
+[value="Send"]{
+    width: 50%;
+    margin: 20px auto !important;
+    border-radius: 30px;
+    background: red !important;
+    border-color: white !important;
+    border-left: 90px solid white !important;
+    box-shadow: none;
+}
+.hover{
+    color: orange !important;
+    background: red !important;
+    font-weight: 900 !important;
+    border-bottom: 5px solid orange ;
+}
+main p {
+    padding: 20px;
+    font-weight: 700;
+    text-indent: 10px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 13px;
+}
+p span {
+    font-weight: 900;
+    padding: 3px ;
+    color: orange;
+    background: red;
+    border-radius: 10px;
+}
+table{
+    background: red ;
+    padding: 10px;
+    margin: 50px auto;
+    border-spacing: 10px !important;
+}
+td{
+    padding:20px !important;
+    background: orange !important;
+    border: 10px solid red;
+    border-radius: 25px;
+}
+tr{
+    border: 10px solid red ;
+}
+th{
+    background: orange !important;
+    color: red;
+}
+table + a{
+    background: red;
+    color: orange;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    border-bottom: 10px double orange;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
